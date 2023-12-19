@@ -1,0 +1,74 @@
+{
+    "name": "بوت تشغيل القرآن",
+    "description": "افضل بوت تشغيل قرآن في الساحة",
+    "logo": "https://telegra.ph/file/a1b7519bff0646140915b.jpg",
+    "keywords": [
+    "bot"
+    ],
+    "stack": "container",
+    "env": {
+      "API_ID": {
+        "description": "ايبي ايدي",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "ايبي هاش",
+        "value": "",
+        "required": true          
+      },
+      "BOT_TOKEN": {
+        "description": "توكن البوت ",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "حط ايدي المالك",
+        "value": "5488301592",
+        "required": true
+      },        
+      "MONGO_DB_URI": {
+        "description": "كود مونجو",
+        "value": "",
+        "required": true
+          },
+      "MUSIC_BOT_NAME": {
+        "description": "اسم بوتك بالعربي",
+        "value": "بوت تشغيل القرآن",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "جلسة بايوجورام",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "ايبي هيروكو",
+        "value": "",
+        "required": false
+      },
+
+      "HEROKU_APP_NAME": {
+        "description": "اسم التطبيق اول فار",
+        "value": "",
+        "required": false
+      },
+      "LOG_GROUP_ID": {
+        "description": "ايدي كروب السجل حطه",
+        "value": "-1002057756187",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
