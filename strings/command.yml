@@ -15,8 +15,8 @@ STATS_COMMAND : ["stats","مستخدمين البوت"]
 LANGUAGE_COMMAND : ["lang", "language", "langs", "لغه", "اللغه"]
 
 # Play Commands
-PLAY_COMMAND : ["play","سوره","تشغيل"]
-PLAY_COMMAND_chh : ["شغل","سورة"]
+PLAY_COMMAND : ["play", "vplay", "cplay", "/cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce", "تشغيل" , "فيديو", "#تشغيل", "/play", "/vplay", "cplay", "cvplay", "/تشغيل", "/ق تشغيل", "/ق شغل", "/فيديو", "تشغيل/", "{NAME_BOT}", "فيديو", "#فديو", "فديو","سورة","سوره"]
+PLAY_COMMAND_chh : ["شغل","فيديو","قناه"]
 STOP_COMMAND_chh : ["ايقاف"]
 PLAYMODE_COMMAND : ["playmode", "/وضع شغل", "وضع شغل", "/playmode","وضع التشغيل"]
 CHANNELPLAY_COMMAND : ["channelplay"]
