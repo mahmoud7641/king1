@@ -1,7 +1,7 @@
-# Copyright (C) 2023 by Alexa_Help @ Github, < https://github.com/TheTeamAlexa >
-# Subscribe On YT < Jankari Ki Duniya >. All rights reserved. © Alexa © Yukki.
-
-
+#
+# Copyright (C) 2021-2022 by Alexa_Help@Github, < https://github.com/Jankarikiduniya >.
+# A Powerful Music Bot Property Of Rocks Indian Largest Chatting Group
+# All rights reserved. © Alisha © Alexa © Yukki
 
 
 import asyncio
@@ -11,7 +11,6 @@ from typing import Union
 
 import aiohttp
 import yt_dlp
-from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
 
@@ -63,13 +62,13 @@ class YouTubeAPI:
                 break
             if message.entities:
                 for entity in message.entities:
-                    if entity.type == MessageEntityType.URL:
+                    if entity.type == "url":
                         text = message.text or message.caption
                         offset, length = entity.offset, entity.length
                         break
             elif message.caption_entities:
                 for entity in message.caption_entities:
-                    if entity.type == MessageEntityType.TEXT_LINK:
+                    if entity.type == "text_link":
                         return entity.url
         if offset in (None,):
             return None
@@ -186,7 +185,7 @@ class YouTubeAPI:
         if "&" in link:
             link = link.split("&")[0]
         ytdl_opts = {"quiet": True}
-        ydl = yt_dlp.YoutubeDL(ytdl_opts)
+        ydl = youtube_dl.YoutubeDL(ytdl_opts)
         with ydl:
             formats_available = []
             r = ydl.extract_info(link, download=False)
@@ -352,4 +351,3 @@ class YouTubeAPI:
             direct = True
             downloaded_file = await loop.run_in_executor(None, audio_dl)
         return downloaded_file, direct
-    
