@@ -5,10 +5,8 @@ dnspython
 ffmpeg-python
 gitpython
 hachoir
-typing
-youtube-search-python
-git+https://github.com/PyrogramMod/PyrogramMod@main
 heroku3
+typing
 lyricsgenius
 motor==3.0.0
 pillow
@@ -16,7 +14,7 @@ telegraph
 psutil
 py-tgcalls==0.9.7
 pykeyboard
-
+pyrogram==1.4.16
 python-dotenv
 PyYAML>=5.3.1
 requests
